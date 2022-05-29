@@ -5,23 +5,26 @@ const taskInput = document.getElementById('add-task-text'),
 taskBtn.addEventListener('click', function(){
     let taskValue = taskInput.value;
 
-    let newTaskWrapper = document.createElement('div');
-    newTaskWrapper.classList.add('task');
-    newTaskWrapper.classList.add('p-1');
-    newTaskWrapper.classList.add('mb-1');
+    if(taskValue == ''){
+        alert('يجب عليك ادخال نص للمهمة')
+    }else{
+        let newTaskWrapper = document.createElement('div');
+        newTaskWrapper.classList.add('task');
+        newTaskWrapper.classList.add('p-1');
+        newTaskWrapper.classList.add('mb-1');
+        
+        let newTaskcheckbox = document.createElement('input');
+        newTaskcheckbox.setAttribute('id', 'task3');
+        newTaskcheckbox.setAttribute('type', 'checkbox');
     
-
-    let newTaskcheckbox = document.createElement('input');
-    newTaskcheckbox.setAttribute('id', 'task3');
-    newTaskcheckbox.setAttribute('type', 'checkbox');
-
-    let newTasklable = document.createElement('label');
-    newTasklable.setAttribute('for', 'task3');
-    newTasklable.innerText = taskValue;
-
-    newTaskWrapper.append(newTaskcheckbox);
-    newTaskWrapper.append(newTasklable);
-    taskWrapper.append(newTaskWrapper);
-    taskInput.value = '';
+        let newTasklable = document.createElement('label');
+        newTasklable.setAttribute('for', 'task3');
+        newTasklable.innerText = taskValue;
+    
+        newTaskWrapper.append(newTaskcheckbox);
+        newTaskWrapper.append(newTasklable);
+        taskWrapper.append(newTaskWrapper);
+        taskInput.value = '';
+    }
 
 });
