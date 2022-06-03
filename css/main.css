@@ -54,6 +54,17 @@ nav .login_nav_img{
     justify-content: flex-end;
 }
 
+.modal-dialog{
+    width: fit-content;
+    max-width: fit-content;
+}
+
+.open-modal {
+    background: transparent;
+    border-radius: 25px;
+    box-shadow: unset;
+}
+
 /** Welcoming **/
 .welcoming{
     color: #2980B9;

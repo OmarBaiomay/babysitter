@@ -28,3 +28,14 @@ taskBtn.addEventListener('click', function(){
     }
 
 });
+
+
+
+
+function test() {
+    const frame = document.querySelector('iframe');
+    let link = "https://youtu.be/YeQH_cMEbrI",
+        endLink = link.split('.be/')[1];
+        console.log(endLink);
+    frame.src =   `https://www.youtube.com/embed/${endLink}`;
+}

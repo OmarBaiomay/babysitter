@@ -49,13 +49,35 @@
 
     <section class="dashboard">
         <div class="container">
+            
+          <!-- Modal -->
+            <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centere">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t0Q2otsqC4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
             <div class="row mb-5 pb-4">
                 <div class="control-wrapper col-12 col-md-4">
                   <div class="control control-1">
-
-                    // Add This in every
-                    <a href="#"></a>
-                    <div class="text">
+                  
+                    <!-- Button trigger modal -->
+                  <a type="button" class="open-modal btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="test()"></a>
+                    
+                  <div class="text">
                         <p id="today-point-text">كارتون</p>
                         <p>توم & جيري</p>
                     </div>
