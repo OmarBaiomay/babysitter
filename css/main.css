@@ -95,6 +95,22 @@ nav .login_nav_img{
     
 }
 
+.control-wrapper .control span.remove{
+    color: #262626;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 9px #000000a3;
+    cursor: pointer;
+}
+
 .control-wrapper .control-1{
     background-color: #2C3E50;
 }
@@ -105,6 +121,18 @@ nav .login_nav_img{
 
 .control-wrapper .control-3{
     background-color: #22A6B3;
+}
+
+.control-wrapper .control-4{
+    background-color: #d35400;
+}
+
+.control-wrapper .control-5{
+    background-color: #16a085;
+}
+
+.control-wrapper .control-6{
+    background-color: #e74c3c;
 }
 
 .control .text p{
